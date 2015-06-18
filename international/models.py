@@ -476,7 +476,7 @@ languages_native = []
 languages_english = []
 
 if babel:
-    locales = babel.localedata.list()
+    locales = babel.localedata.locale_identifiers()
     locales.sort()
     for l_id in locales:
         l = babel.Locale(l_id)
